@@ -9,16 +9,13 @@ public interface CuteLevelProperty extends Config {
 
     @Key(value = "hairless.property")
     @ConverterClass(CuteLevelConverter.class)
-    @DisableFeature(DisableableFeature.PARAMETER_FORMATTING)
     CuteLevel getHairlessProperty();
 
     @Key(value = "bad.property")
     @ConverterClass(CuteLevelConverter.class)
-    @DisableFeature(DisableableFeature.PARAMETER_FORMATTING)
     CuteLevel getBadProperty();
 
     @Key(value = "fat.property")
     @ConverterClass(CuteLevelConverter.class)
-    @DisableFeature(DisableableFeature.PARAMETER_FORMATTING)
     CuteLevel getFatProperty();
 }

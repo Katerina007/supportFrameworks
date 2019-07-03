@@ -10,6 +10,7 @@ import lombok.Setter;
 import lombok.SneakyThrows;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 
 @Slf4j
 @Getter
@@ -44,7 +45,7 @@ public class Kitty extends Animal {
     public void kill() {
         log.error("Кот умер");
         if (!cuteLevel.toString().equals(CuteLevel.BAD_CAT.toString())) {
-            log.info(String.format("Хозяин %s %s в печали", owner.getName(), owner.getLastName()));
+            log.info(StringUtils.joinWith(" ", "Хозяин", owner.getName(), owner.getLastName(), "в печали"));
         }
         throw new InterruptedException();
     }
