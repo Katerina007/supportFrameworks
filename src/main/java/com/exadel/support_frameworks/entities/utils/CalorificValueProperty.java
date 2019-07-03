@@ -1,6 +1,5 @@
 package com.exadel.support_frameworks.entities.utils;
 
-
 import org.aeonbits.owner.Config;
 
 @Config.Sources("classpath:properties/calorificValue.properties")

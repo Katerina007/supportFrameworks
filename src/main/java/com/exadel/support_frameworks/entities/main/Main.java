@@ -37,10 +37,10 @@ public class Main {
         catFather.setDailyFood(food);
 
         EatCharacteristic meal = EatCharacteristic.createCharacteristic()
-                         .amountFoodEaten(3)
-                         .catPosition(CatPosition.STAND)
-                         .dayPart(DayPart.MORNING)
-                         .build();
+                .amountFoodEaten(3)
+                .catPosition(CatPosition.STAND)
+                .dayPart(DayPart.MORNING)
+                .build();
 
         kitty.eat(meal);
         catMother.eat(meal);

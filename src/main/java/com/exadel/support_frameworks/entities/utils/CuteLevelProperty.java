@@ -1,6 +1,5 @@
 package com.exadel.support_frameworks.entities.utils;
 
-
 import com.exadel.support_frameworks.entities.enumerations.CuteLevel;
 import org.aeonbits.owner.Config;
 

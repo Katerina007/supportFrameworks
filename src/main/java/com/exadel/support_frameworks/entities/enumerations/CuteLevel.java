@@ -10,7 +10,7 @@ public enum CuteLevel {
     @Override
     public String toString() {
         return StringUtils.replaceChars(super.toString(), '_', ' ')
-                          .toLowerCase()
-                          .replaceFirst(".", StringUtils.left(super.toString(), 1));
+                .toLowerCase()
+                .replaceFirst(".", StringUtils.left(super.toString(), 1));
     }
 }

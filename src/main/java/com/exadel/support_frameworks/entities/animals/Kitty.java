@@ -4,11 +4,7 @@ import com.exadel.support_frameworks.entities.enumerations.CuteLevel;
 import com.exadel.support_frameworks.entities.food.EatCharacteristic;
 import com.exadel.support_frameworks.entities.food.KittyCat;
 import com.exadel.support_frameworks.entities.humans.Owner;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.SneakyThrows;
-import lombok.ToString;
+import lombok.*;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -30,9 +26,7 @@ public class Kitty extends Animal {
     public void eat(EatCharacteristic eatCharacteristic) {
         if (this.dailyFood.getWeight() == 0) {
             log.warn("Кот обеспокоен нехваткой пищи");
-            return;
-        }
-        else {
+        } else {
             log.info("Кот поел");
             this.dailyFood.setWeight(this.dailyFood.getWeight() - eatCharacteristic.getAmountFoodEaten());
             if (this.dailyFood.getWeight() < 0) {

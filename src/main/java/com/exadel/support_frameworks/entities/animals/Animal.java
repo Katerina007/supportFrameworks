@@ -1,10 +1,6 @@
 package com.exadel.support_frameworks.entities.animals;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @Getter
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
